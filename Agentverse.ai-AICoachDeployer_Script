@@ -1,0 +1,44 @@
+from uagents import Agent, Context
+
+# Initialize the agent with a custom name and wallet
+agent = Agent(name="AI coach deployer")
+
+# Default information to store
+DEFAULT_NAME = "AI coach deployer"
+DEFAULT_AGENT_DESCRIPTION = (
+    "An AI agent designed to help coaches launch a personalized AI version of themselves. "
+    "It scales their presence, provides 24/7 support, and shares knowledge with clients."
+)
+DEFAULT_PERSONALITY_DESCRIPTION = (
+    "Warm, friendly, empathic, and supportive. Listens with understanding and encourages growth. "
+    "Helps users reflect, find clarity, and take action in a safe, nonjudgmental space."
+)
+
+@agent.on_event("startup")
+async def setup_identity(ctx: Context):
+    """On startup, set identity values if not already stored."""
+    if not ctx.storage.get("name"):
+        ctx.storage.set("name", DEFAULT_NAME)
+        ctx.logger.info(f"Name set to: {DEFAULT_NAME}")
+    
+    if not ctx.storage.get("agent_description"):
+        ctx.storage.set("agent_description", DEFAULT_AGENT_DESCRIPTION)
+        ctx.logger.info("Agent description stored.")
+    
+    if not ctx.storage.get("personality_description"):
+        ctx.storage.set("personality_description", DEFAULT_PERSONALITY_DESCRIPTION)
+        ctx.logger.info("Personality description stored.")
+
+@agent.on_interval(period=30.0)
+async def log_identity(ctx: Context):
+    """Periodically log the agents identity information."""
+    name = ctx.storage.get("name")
+    description = ctx.storage.get("agent_description")
+    personality = ctx.storage.get("personality_description")
+
+    ctx.logger.info(f"Agent Name: {name}")
+    ctx.logger.info(f"Description: {description}")
+    ctx.logger.info(f"Personality: {personality}")
+
+if __name__ == "__main__":
+    agent.run()
