@@ -1,3 +1,5 @@
+#I'm not technical, this is my first GitHub and my first solo hacking.
+
 # 🧠 Coach Clone AI
 
 **Coach Clone AI** is a platform for coaches to create and deploy AI clones that provide 24/7 personalized support, accountability tracking, and knowledge sharing to help clients grow at scale.
