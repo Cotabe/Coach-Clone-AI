@@ -15,8 +15,8 @@
      - ☑️ Create TG bot  
      - ☑️ Customize profile  
    - Optimize based on documentation  
-     - ☑️ Personality  
-     - ❌ Knowledge graph *(Deprioritized)*
+     - ☑️ Optimize Personality  
+     - ❌ Optimize Knowledge graph *(Deprioritized)*
 
 2. **MVP SaaS**  
    Crear en Flockx.io un agente que recopile información clave de coaches para optimizar el prompt y lanzar un agente con solo responder unas preguntas en Telegram.
@@ -27,12 +27,12 @@
 
 3. **UI Mockup**
 
-   3.1 Crear el frontend/UI en [V0.dev](https://v0.dev) para desplegar un agente  
-   3.2 Pulir el frontend  
-   3.3 Priorizar Onramp/rails cripto *(Circle, Flare, Hedera y/o Katana)*
+   3.1 ☑️ Create the frontend/UI in [V0.dev](https://v0.dev) to deploy a Coach Clone agent  
+   3.2 Design all the key components of the frontend  
+   3.3 Prioritize Onramp/rails cripto *(Circle, Flare, Hedera and/or Katana)*
 
 4. **Platform MVP**
 
-   4.1 Una plataforma que funcione
+   4.1 Functional MVP of the platform
 
 5. **Onchain and fiat payment**
