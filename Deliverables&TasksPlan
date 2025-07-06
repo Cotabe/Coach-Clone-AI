@@ -1,0 +1,38 @@
+# Deliverables and tasks:
+
+1. **MVP Agent**  
+   Crear un agente en Fleek y Flockx.
+
+   1.1 **Fix agent in Fleek**
+   - ☑️ Get new ChatGPT API keys for coach_llama  
+   - ❌ Redeploy Coach Llama *(Blocked by Fleek deployer)*
+
+   1.2 **Deploy Coach_Llama on Flockx**
+   - ☑️ Create agent  
+   - ☑️ Customize it  
+   - ☑️ Test it  
+   - ☑️ Integrate with TG  
+     - ☑️ Create TG bot  
+     - ☑️ Customize profile  
+   - Optimize based on documentation  
+     - ☑️ Personality  
+     - ❌ Knowledge graph *(Deprioritized)*
+
+2. **MVP SaaS**  
+   Crear en Flockx.io un agente que recopile información clave de coaches para optimizar el prompt y lanzar un agente con solo responder unas preguntas en Telegram.
+
+   2.1 ☑️ Deploy agent  
+   2.2 ❌ Optimize personality *(Deprioritized)*  
+   2.3 ❌ Use workflows *(Blocked — feature on request, call booked for Friday)*
+
+3. **UI Mockup**
+
+   3.1 Crear el frontend/UI en [V0.dev](https://v0.dev) para desplegar un agente  
+   3.2 Pulir el frontend  
+   3.3 Priorizar Onramp/rails cripto *(Circle, Flare, Hedera y/o Katana)*
+
+4. **Platform MVP**
+
+   4.1 Una plataforma que funcione
+
+5. **Onchain and fiat payment**
